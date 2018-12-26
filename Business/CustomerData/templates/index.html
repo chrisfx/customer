@@ -1,0 +1,15 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Customer Portal Project</h1>
+  <p>Welcome to Customer Portal Project... <em>Customer Data</em>!</p>
+  <h2>Dynamic content</h2>
+  <p>The Portal has the following record counts:</p>
+  <ul>
+    <li><strong>Customers:</strong> {{ num_Customer }}</li>
+    <li><strong>Query Customers:</strong><br/> {{ name_Customer }}</li>
+<!--    <li><strong>Copies:</strong> {{ num_instances }}</li>
+    <li><strong>Copies available:</strong> {{ num_instances_available }}</li>
+    <li><strong>Authors:</strong> {{ num_authors }}</li>-->
+  </ul>
+{% endblock %}
