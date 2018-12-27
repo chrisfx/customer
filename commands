@@ -1,0 +1,16 @@
+
+sudo apt install python3-pip
+sudo pip3 install virtualenvwrapper
+source ~/.bashrc
+source ~/.bash_profile
+pip3 install django
+mkdir Business
+cd Business
+django-admin startproject Business
+cd Business
+python3 manage.py runserver
+python3 manage.py startapp CustomerData
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 manage.py createsuperuser
+./manage.py runserver 0.0.0.0:8000
